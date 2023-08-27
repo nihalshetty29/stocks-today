@@ -1,19 +1,20 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import IndividualStock from "./pages/IndividualStock";
 import Navbar from "./components/Navbar";
 
 function App() {
     return (
         <Router>
             <Navbar />
-            <div className="py-28">
+            <div className="container mx-auto px-96 py-28">
                 <Switch>
                     <Route exact path="/">
                         <Home />
                     </Route>
                     <Route path="/ticker/:tickerName">
-                        <div>Hi</div>
+                        <IndividualStock />
                     </Route>
                 </Switch>
             </div>
