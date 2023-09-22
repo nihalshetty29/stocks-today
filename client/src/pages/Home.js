@@ -18,7 +18,7 @@ const Home = () => {
             const { data } = await axios.get(
                 "http://localhost:3000/grouped-daily"
             );
-            setStocksData(data.data.results.slice(0, 20));
+            setStocksData(data.data.results?.slice(0, 20));
             setIsLoading(false);
         };
 
@@ -28,7 +28,7 @@ const Home = () => {
     return (
         <div>
             {isLoading && <Loader />}
-            {!isLoading && stocksData.length > 0 && (
+            {!isLoading && stocksData?.length > 0 && (
                 <StocksTable data={stocksData} />
             )}
         </div>

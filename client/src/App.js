@@ -8,7 +8,7 @@ function App() {
     return (
         <Router>
             <Navbar />
-            <div className="container mx-auto px-96 py-28">
+            <div className="container mx-auto px-96 py-28 font-lato">
                 <Switch>
                     <Route exact path="/">
                         <Home />
