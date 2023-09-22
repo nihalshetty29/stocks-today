@@ -49,6 +49,17 @@ app.get("/ticker-daily", async (req, res) => {
     }
 });
 
+app.get("/ticker-details", async (req, res) => {
+    const { ticker } = req.query;
+
+    try {
+        const { data } = await api.get(`/v3/reference/tickers/${ticker}`);
+        res.status(200).json({ message: "Data fetched successfully", data });
+    } catch (err) {
+        res.status(404).json({ message: "An error occured", err });
+    }
+});
+
 app.get("/grouped-daily", async (req, res) => {
     const date = getYesterdayDate();
 
