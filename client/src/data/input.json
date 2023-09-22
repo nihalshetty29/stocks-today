@@ -1,0 +1,50 @@
+[
+    {
+        "balance_sheet": {
+            "assets": {
+                "value": 12825437000,
+                "unit": "USD",
+                "label": "Assets",
+                "order": 100
+            },
+            "liabilities": {
+                "value": 11458204000,
+                "unit": "USD",
+                "label": "Liabilities",
+                "order": 600
+            }
+        }
+    },
+    {
+        "balance_sheet": {
+            "assets": {
+                "value": 13007986000,
+                "unit": "USD",
+                "label": "Assets",
+                "order": 100
+            },
+            "liabilities": {
+                "value": 11458204000,
+                "unit": "USD",
+                "label": "Liabilities",
+                "order": 600
+            }
+        }
+    },
+    {
+        "balance_sheet": {
+            "assets": {
+                "value": 1382984938,
+                "unit": "USD",
+                "label": "Assets",
+                "order": 100
+            },
+            "liabilities": {
+                "value": 3874837843,
+                "unit": "USD",
+                "label": "Liabilities",
+                "order": 600
+            }
+        }
+    }
+]
